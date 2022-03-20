@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: blue;
+        }
+        p::first-letter {
+            color: aquamarine;
+        }
+        p::before {
+            content: "👍";
+        }
+        p:hover::before {
+            content: "😁";
+        }
+        p::after {
+            content: "🤦‍♂️";
+        }
+        p:hover::after {
+            content: "🤷‍♂️";
+        }
+        p:hover {
+            color: teal;
+        }
+        div p:nth-child(2) {
+            color: coral;
+        }
+        ::placeholder{
+            color: springgreen;
+        }
+        input {
+            border: 1rem groove red;
+            color: blue;
+        }
+        input:hover {
+            border: 1rem dashed green;
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Javascript</p>
+        <p>HTML</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
